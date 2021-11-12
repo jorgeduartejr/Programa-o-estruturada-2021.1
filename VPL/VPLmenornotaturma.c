@@ -9,18 +9,16 @@ int main(){
     {   
         primeiraNota = menorNota;
         scanf("%d", &primeiraNota);
-        if(primeiraNota < 0 || primeiraNota > 10){
-            
-        }
-        if (primeiraNota < menorNota)
-        {
+        if(primeiraNota >= 0 && primeiraNota <= 10){
+            if (primeiraNota < menorNota){
             menorNota = primeiraNota;
+            }
         }
         
 
     }
-    menorNota - cont;
-    printf("%d menor nota\n ", menorNota);
+    
+    printf("%d\n ", menorNota);
     
 
     return 0;
